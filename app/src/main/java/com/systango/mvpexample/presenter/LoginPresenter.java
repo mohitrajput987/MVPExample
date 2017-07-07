@@ -5,7 +5,7 @@ import android.text.TextUtils;
 import com.systango.mvpexample.contract.LoginContract;
 
 /**
- * Created by Mohit Rajput on 7/7/17.
+ * Created by Mohit Rajput on 6/7/17.
  * TODO: Insert javadoc information here
  */
 
