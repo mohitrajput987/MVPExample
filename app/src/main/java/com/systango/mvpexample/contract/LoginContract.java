@@ -17,7 +17,7 @@ public class LoginContract {
   }
 
   public interface Presenter{
-    void onLoginBtnClicked();
+    void onLoginBtnClicked(String email, String password);
   }
 
   public interface Repository{

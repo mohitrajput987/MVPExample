@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import com.systango.mvpexample.R;
 import com.systango.mvpexample.contract.LoginContract;
+import com.systango.mvpexample.presenter.LoginPresenter;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -30,6 +31,7 @@ public class LoginActivity extends AppCompatActivity implements LoginContract.Vi
         setContentView(R.layout.activity_login);
         context = LoginActivity.this;
         ButterKnife.bind(this);
+        presenter = new LoginPresenter(this);
     }
 
     @Override
@@ -49,7 +51,7 @@ public class LoginActivity extends AppCompatActivity implements LoginContract.Vi
 
     @OnClick(R.id.btnLogin)
     void onLoginBtnClicked() {
-
+        presenter.onLoginBtnClicked(etEmail.getText().toString(), etPassword.getText().toString());
     }
 
 }

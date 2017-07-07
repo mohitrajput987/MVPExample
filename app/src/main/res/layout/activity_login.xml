@@ -43,6 +43,8 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:text="Login"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnRegister"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
